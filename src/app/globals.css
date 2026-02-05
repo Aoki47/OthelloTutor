@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* Premium Dark Mode Base */
+  --background: #0a0f1c; /* Deep Navy/Black */
+  --foreground: #ededed;
+  
+  /* Othello Board Colors */
+  --board-green: #1e5c35; /* Classic Felt Green */
+  --board-border: #143d23;
+  
+  /* Pieces */
+  --piece-black: #1a1a1a;
+  --piece-white: #f5f5f5;
+  
+  /* UI Accents (Glassmorphism) */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(148, 163, 184, 0.2);
+  --highlight-valid: rgba(16, 185, 129, 0.3); /* Emerald hint */
+  --highlight-best: rgba(59, 130, 246, 0.5); /* Blue hint */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-board-green: var(--board-green);
+  --color-board-border: var(--board-border);
+  --color-piece-black: var(--piece-black);
+  --color-piece-white: var(--piece-white);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+  --color-highlight-valid: var(--highlight-valid);
+  --color-highlight-best: var(--highlight-best);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0a0f1c 100%);
+}
